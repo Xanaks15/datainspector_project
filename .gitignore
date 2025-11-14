@@ -1,33 +1,9 @@
-# === ENTORNOS VIRTUALES ===
 venv/
-env/
-.venv/
-
-# === CACHE PYTHON ===
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-# === ARCHIVOS DE DJANGO ===
-db.sqlite3
+media/
+datasets/*.csv
+!datasets/.keep        # archivo vacío para mantener la carpeta
+
 *.sqlite3
-
-# === MEDIA / UPLOADS ===
-datasets/
-uploads/
-
-# === ARCHIVOS DE EDITOR ===
-.vscode/
-*.code-workspace
-
-# === ARCHIVOS DEL SISTEMA ===
-.DS_Store
-Thumbs.db
-
-# === STATIC (cuando se generan automáticamente) ===
-staticfiles/
-static/
-
-# === LOGS ===
-*.log
