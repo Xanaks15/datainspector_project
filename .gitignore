@@ -15,7 +15,6 @@ db.sqlite3
 
 # === MEDIA / UPLOADS ===
 datasets/
-media/
 uploads/
 
 # === ARCHIVOS DE EDITOR ===
