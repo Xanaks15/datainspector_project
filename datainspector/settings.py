@@ -125,7 +125,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Media files: location where datasets are stored
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'datasets'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "datasets")
 
 # Ensure the datasets directory exists
 os.makedirs(MEDIA_ROOT, exist_ok=True)
@@ -135,3 +136,4 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_DATASET_PATH = os.path.join(BASE_DIR, "default_data", "uber_booking.csv")
